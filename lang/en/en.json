@@ -1,0 +1,316 @@
+{
+  "404_title": "Something's missing.",
+  "404_btn": "Back to homapage",
+  "404_body": "Sorry, we can't find that page. You'll find lots to explore on the home page.",
+  "all_p": [
+    {
+      "category": "Disinfectants",
+      "products": [
+        {
+          "name": "D-H-S Ions",
+          "desc": "The Latest Exclusive Multipurpose Disinfectant, hydrogen peroxide (50%) & silver ions. Long acting broad spectrum against spores, fungi, bacteria, viruses, algae, bio film. Food grade, nontoxic, non-carcinogenic, non-mutagenic.",
+          "image": "dhs"
+        },
+        {
+          "name": "D-Q-A Cloud",
+          "desc": "New innovation nanotechnology disinfectant, Quaternary ammonium compound & Branched alcohol. Strong against spores, fungi, bacteria, viruses, algae. Food grade, nontoxic",
+          "image": "dqa"
+        },
+        {
+          "name": "D-1",
+          "desc": "The Latest Exclusive Multipurpose Disinfectant, hydrogen peroxide (50 %) & silver ions. D-H-S IONS. long acting broad spectrum against spores, fungi’s, bacteria, viruses, algae and bio film. D-H-S IONS. food grade, nontoxic, non-carcinogenic and non-mutagenic.",
+          "image": "d1"
+        },
+        {
+          "name": "Anti Keime",
+          "desc": "New generation multipurpose disinfectant, ready to use, hydrogen peroxide & silver ions. Long acting broad spectrum against spores, fungi, bacteria, viruses, algae, bio film. Food grade, nontoxic, non-carcinogenic, non-mutagenic.",
+          "image": "AntiK"
+        },
+        {
+          "name": "D-Cloud",
+          "desc": "New innovation nanotechnology disinfectant, Quaternary ammonium compound & Branched alcohol. Strong against spores, fungi, bacteria, viruses, algae. Food grade, nontoxic",
+          "image": "dcloud"
+        },
+        {
+          "name": "D-PLUS",
+          "desc": "A several substances oligodynamic disinfectants. A synergetic effect of hydrogen peroxide, silver ions & acetic acid. Long acting broad spectrum against spores, fungi, bacteria, viruses, algae, bio film .Food grade, nontoxic, non-carcinogenic, nonmutagenic. ",
+          "image": "dplus"
+        }
+      ]
+    },
+    {
+      "category": "Pre-Disinfectants",
+      "products": [
+        {
+          "name": "PD-O",
+          "desc": "A strong Pre-Disinfectant acidic cleaner, medium foaming Effective in the lowest concentration on salts, scales, grease, fats and proteins. Free from dangerous and harmful substances for health & production lines.",
+          "image": "pdo"
+        },
+        {
+          "name": "PD-L",
+          "desc": "A strong Pre-Disinfectant Alkaline cleaner, low foaming Effective in the lowest concentration on grease, fats, proteins and scales. Free from dangerous and harmful substances for health & production lines.",
+          "image": "pdl"
+        },
+        {
+          "name": "PD-N",
+          "desc": "A strong Pre-Disinfectant neutral cleaner, highly foaming, Effective in the lowest concentration on grease, fats, proteins and scales. Free from dangerous and harmful substances for health & production lines.",
+          "image": "pdn"
+        },
+        {
+          "name": "PD-Powder",
+          "desc": "A strong Alkaline pre disinfectant powder with acidic media. Effective in the lowest concentration on salts, scales, grease, fats and proteins. Free from dangerous and harmful substances for health & production lines.",
+          "image": "pdp"
+        }
+      ]
+    },
+    {
+      "category": "Removers",
+      "products": [
+        {
+          "name": "SSR",
+          "desc": "A strong mixture of chemical cleaning solvents, emulsifier, surfactant and mixture of removers with disinfectant power to be able to remove any oil spots, organic spots and stains. It is not corrosive material so can work at any surface.",
+          "image": "ssr"
+        },
+        {
+          "name": "SMC",
+          "desc": "A strong several complex substances antirust, corrosion inhibitor which stabilized for shiny metals.",
+          "image": "smc"
+        }
+      ]
+    },
+    {
+      "category": "Hand Care",
+      "products": [
+        {
+          "name": "Hand Soap",
+          "desc": "A ready to use hand soap for cleaning and moisturizing. effective cleaning & get rid of germs. Preserves from infection and contagion.",
+          "image": "hand_saop"
+        },
+        {
+          "name": "Antibacterial Hand Soap",
+          "desc": "A ready to use hand soap for cleaning, sanitation and moisturizing. effective cleaner & sanitizer against all kinds of microbes, fungi, bacteria, viruses. Preserves from infection and contagion.",
+          "image": "AB_soap"
+        },
+        {
+          "name": "Hand Sanitizer (Gel)",
+          "desc": "Highest sterilizer hygienic hand gel",
+          "image": "hand_gel"
+        },
+        {
+          "name": "Hand Sanitizer (Liquid)",
+          "desc": "A powerful, ready to use hand Sanitizer liquid with two types of sanitizers & skin moisturizer. Effective, broad spectrum against all kinds of microbes, fungi, bacteria, viruses.",
+          "image": "hand_li"
+        }
+      ]
+    },
+    {
+      "category": "Detergents",
+      "products": [
+        {
+          "name": "DT-11",
+          "desc": "A strong alkaline, low foaming detergent. Effective in the lowest concentration on grease, fats, proteins and scales. Contains a safe, organic alkaline and is phosphate-free, so it will not interfere with sensitive equipment or testing procedures.",
+          "image": "dt11"
+        },
+        {
+          "name": "DT-C",
+          "desc": "A strong acidic medium foaming detergent, Effective in the lowest concentration on salts, scales, grease, fats and proteins as well as metal brightening. Contains a safe, organic acid and is phosphate-free, so it will not interfere with sensitive equipment or testing procedures.",
+          "image": "dtc"
+        },
+        {
+          "name": "DT-N",
+          "desc": "A strong neutral, high foaming detergent. Effective in the lowest concentration on grease, fats, proteins and scales. Contains a safe, organic acid and is phosphate-free, so it will not interfere with sensitive equipment or testing procedures.",
+          "image": "dtn"
+        }
+      ]
+    },
+    {
+      "category": "Carrier",
+      "products": [
+        {
+          "name": "Neutral Foam",
+          "desc": "Neutral foam cleaner. Effective in the lowest concentration on grease, fats, proteins and scales. Contains a safe, organic acid and is phosphate-free, so it will not interfere with sensitive equipment or testing procedures.",
+          "image": "n_foam"
+        },
+        {
+          "name": "Acidic Foam",
+          "desc": "Acidic foam cleaner. Effective in the lowest concentration on salts, scales, grease, fats and proteins as well as metal brightening. Contains a safe, organic acid and is phosphate-free, so it will not interfere with sensitive equipment or testing procedures.",
+          "image": "ac_foam"
+        },
+        {
+          "name": "Alkaline Foam",
+          "desc": "Alkaline foam cleaner. Effective in the lowest concentration on grease, fats, proteins and scales. Contains a safe, organic alkaline and is phosphate-free, so it will not interfere with sensitive equipment or testing procedures.",
+          "image": "ak_foam"
+        }
+      ]
+    }
+  ],
+  "ch_title": "COMPARISON OF D-H/S IONS WITH CHLORINE",
+  "long_term_effect": "Long term effect",
+  "very_long": "very long",
+  "depending_on_temperature_short_till_medium": "depending on temperature, short till medium",
+  "light_sensibility": "Light sensibility",
+  "practically_not": "practically not",
+  "medium": "Medium",
+  "temperature_sensibility": "Temperature sensibility",
+  "fast_degradation_at_rising_temperatures": "Fast degradation at rising temperatures",
+  "neutral_ph": "Neutral pH",
+  "neutral": "neutral",
+  "change_of_ph_of_the_treated_water": "change of pH of the treated water",
+  "contact_time": "Contact time",
+  "short": "Short",
+  "retarded_efficiency_through_organic_materials": "Retarded efficiency through organic materials",
+  "yes": "Yes",
+  "influence_of_ammonia_or_urea": "Influence of ammonia or urea",
+  "till_5_mg_l_not": "till 5 mg/l not",
+  "reaction_to_chloramines": "reaction to chloramines",
+  "efficiency_against_algae": "Efficiency against algae",
+  "limited": "Limited",
+  "efficiency_against_fungi": "Efficiency against fungi",
+  "forming_of_smell": "Forming of smell",
+  "no": "No",
+  "change_of_taste": "Change of taste",
+  "danger_of_over_dose": "Danger of over dose",
+  "carcinogenic_mutagenic": "Carcinogenic/mutagenic",
+  "reaction_yes": "reaction: yes",
+  "property": "Property",
+  "dh_s_ions": "D-H/S IONS",
+  "chlorine": "Chlorine",
+  "questions": [
+    {
+      "question": "Why should I use bafry products?",
+      "answer": "Unlike most other disinfectants in the marketplace, bafry products are ECO-friendly, Antimicrobia, Non-toxic, they work effectively up to temperatures of 95 degrees centigrade, they have no taste, smell or colour deformation. They are 100% chlorine free and no rinsing is required after application."
+    },
+    {
+      "question": "If not Chlorine, what do bafry products contain?",
+      "answer": "Essentially the product contains a mixture of Hydrogen peroxide and silver ions and is fully biodegradable."
+    },
+    {
+      "question": "Is bafry like chlorine?",
+      "answer": "No. The qualities are quite different to other substances such as Chlorine and Bromine. It has no taste, smell or colour."
+    },
+    {
+      "question": "Are bafry products safe?",
+      "answer": "Yes 100%. bafry products are made up of natural ingredients."
+    },
+    {
+      "question": "How do I use bafry products?",
+      "answer": "bafry products are used in many different ways - this will depend on your area of industry and specific requirements. bafry representatives are able to advise Clients on which products may be used in order to facilitate efficient disinfectant methods once an on-site briefing and visit has taken place. bafry currently works with a range of industries including Water supply companies, Hotels, Hospitals, Dairy and Food processing plants to name a few. Through experience we are therefore aware of many of the common problems faced within each of these categories and are able to provide fast and effective solutions based on first hand experience."
+    },
+    {
+      "question": "How do I know if bafry products will work?",
+      "answer": "Though we have our own laboratory and team we continue to have our products tested by local and international authorities."
+    },
+    {
+      "question": "If I decide to use bafry products, what length of contract do I have to agree to?",
+      "answer": "Our company policy is not to tie Clients into extended contract periods. We are confident that once you have tried using any of our products you will want to continue using them. If for any reason you wish to stop purchasing the product, we believe you have every right to do so. Of all of the Clients we work with to date, none of them have left us to use any other product."
+    },
+    {
+      "question": "Who is currently using bafry products?",
+      "answer": "Bafry currently works with a range of industries including Water supply companies, Hotels, Hospitals, Dairy and Food processing plants to name a few."
+    },
+    {
+      "question": "Does anyone else supply the same chemicals?",
+      "answer": "Yes there are approx. four companies in the world producing this type of product. We encourage Clients to do their own research and carry out comparisons, but our formula differs, and it has a corrosion inhibitor 'Food Grade Substance'."
+    },
+    {
+      "question": "Where do I start? How do I know if bafry products will work for me?",
+      "answer": "Speak to a bafry representative today and we will be able to tell you where and how your company will benefit through using any of the products."
+    },
+    {
+      "question": "Are bafry products stable?",
+      "answer": "bafry products can be stored for up to two years and are proven effective up to 95 degrees centigrade."
+    },
+    {
+      "question": "Are bafry products toxic?",
+      "answer": "No - 100% non-toxic."
+    },
+    {
+      "question": "Are bafry products environmentally friendly?",
+      "answer": "Yes - the core ingredients are water and oxygen."
+    },
+    {
+      "question": "What form do bafry products come in?",
+      "answer": "Bafry products are supplied in liquid form in 5 litre and 65 litre jerry cans."
+    }
+  ],
+  "abstract": "Abstract",
+  "abstract_p": "Trial of using Bafry D50/500 for control in saprolegniosis in a dose of 0.75 ml/L (375ppm) for 10-12 minutes for 3 successive days as a bath gave good results in treatment of the diseased fish in aquaria, this were indicated the rate of mortality reach 16.7% without any effect on the healthy stat of treated fish and also no effect on hematology and blood chemistry of treated fish with Bafry D50/500. Histopathological finding of treated fish with Bafry D50/500: skin showed increase of M.M.C. and slight sloughing of most superficial layer of epidermis but the gills showed hyperplasia of epithelial cells covering of primary lamellae, this indicate that the infected fish was treated with BafryD50/500.",
+  "ul_1": "Materials and Methods",
+  "ul_1_1": "Materials",
+  "ul_1_2": "Naturally infected fish",
+  "ul_1_3": "Fish for experiment",
+  "ul_1_4": "Media",
+  "ul_1_5": "Chemicals used for treatment",
+  "ul_1_6": "Stain",
+  "methods": "Methods",
+  "clinical_examination": "Clinical examination",
+  "postmortem_examination": "Postmortem examination",
+  "bacteriological_examination": "Bacteriological examination",
+  "mycological_examination": "Mycological examination",
+  "isolation_of_fungi": "Was carried out from naturally infected fish, samples were taken from fish showing skin lesions, eye, fins, gills, mouth, spleen, liver and kidney lesions were collected and inoculated onto SDA medium plates and incubated at 20 ± 2ºC for 3-4 days, subculture on the same media was done for purification.",
+  "identification_of_isolates": "Identification of the isolates",
+  "biochemical_analysis": "Biochemical analysis",
+  "histopathological_examination": "Histopathological examination of infected and treated fish",
+  "results": "Results",
+  "result_1": "Clinical examination",
+  "result_2": "Postmortem examination",
+  "result_3": "Mycological examination",
+  "histopathological_results": [
+    "Histopathological examination of naturally infected fish",
+    "Histopathological examination of treated fish"
+  ],
+  "conclusion": "Conclusion",
+  "conclusion_p": "The most effective method for controlling and preventing saprolegniosis in fish ecosystem is a combination of good fish management as good water quality and avoid adverse water temperature and Bafry D50/500 used for controlling in a concentration of 0.75ml/L (375PPm) as a bath for 10 minutes.",
+  "home_p": "A German Saudi Arabian company leading and specializing in hygiene solutions and disinfectants. With commitment to cleanliness, safety, and innovation, we provide high- quality products designed to protect both personal and public health. Our range of advanced disinfectants and hygiene solutions are formulated to meet the highest industry standards, ensuring effective protection against harmful bacteria, viruses, and germs.",
+  "our": "Our Products",
+  "vision_p": "To lead the way in environmental solutions, offering a wide range of products designed to address unique application needs, making a lasting impact for a cleaner, safer environment.",
+  "mission_p": "To create a microbe-free world and elevate environmental health standards through innovative solutions tailored to diverse environmental challenges.",
+  "vision": "Vision",
+  "mission": "Mission",
+  "head_office": "Head Office",
+  "fact": "Factory",
+  "send": "Send",
+  "add_off": "Olaya St, Tarim tower, Riyadh Saudi Arabia",
+  "add_fact": "5157 Al Yarmouk District, Buraydah, Al Qassim, KSA.",
+  "new_sec":"Commitment",
+  "new_sec_p":"With over 20 years of expertise in leading the disinfection industry and combating infections, we guarantee top-quality products and services. As certified hygiene specialists, we proudly serve hundreds of clients worldwide, ensuring the highest standards of safety and sanitation.",
+  "contacts":"Contacts",
+  "home": "Home",
+  "products": "Products",
+  "studies": "Studies",
+  "faq": "FAQ",
+  "contact": "Contact Us",
+  "tools": "Tools",
+  "more_info": "more info",
+  "hide":"Hide Info",
+  "close":"Close",
+  "contact_email":"Send us an Email",
+  "name_email":"Name",
+  "comment":"Leave a comment",
+  "email_add":"Email Address",
+  "message":"Message",
+  "comparison_title": "Comparison of D-H/S Ions with Peracetic Acid",
+  "peracetic_acid": "Peracetic Acid",
+  "universal_usage": "Universal usage",
+  "gaps_of_effect": "Gaps of effect",
+  "smell": "Smell",
+  "influence_on_taste_smell_consistence_of_food_beverages": "Influence on taste, smell & consistency of food / beverages",
+  "rinsing_necessary": "Rinsing necessary",
+  "corrosive": "Corrosive",
+  "stacking": "Stacking",
+  "fully_automatic_feedback_control": "Fully automatic feedback-control",
+  "application_range_of_ph": "Application range of pH",
+  "application_range_of_ph_dh_s_ions": "1 - 8",
+  "application_range_of_ph_peracetic_acid": "2.5 - 4",
+  "application_range_of_temperature": "Application range of temperature",
+  "application_range_of_temperature_dh_s_ions": "5° - 95°C",
+  "application_range_of_temperature_peracetic_acid": "5° - 40°C; Danger of explosion > 65°C",
+  "neutralisation_of_waste_water": "Neutralisation of waste water",
+  "velocity_of_killing_of_germs": "Velocity of killing of germs",
+  "fast": "Fast",
+  "practically_no": "Practically no",
+  "biting": "Biting",
+  "par_study":"PERACETIC ACID Study",
+  "ch_study":"Chlorine Study",
+  "fish_study":"Study in Fish"
+}
