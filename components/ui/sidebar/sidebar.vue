@@ -30,14 +30,14 @@ const setLanguagePreference = (lang) => {
 };
 
 const toggleLanguage = () => {
-    const newLang = currentLanguage.value === 'en' ? 'ar' : 'en';
-    setLanguagePreference(newLang);
-    currentLanguage.value = newLang;
-    router.push({
-        path: `/${newLang}${route.fullPath.substring(3)}` // Update the lang in the current path
-    }).then(() => {
-        window.location.reload();
-    });
+    // const newLang = currentLanguage.value === 'en' ? 'ar' : 'en';
+    // setLanguagePreference(newLang);
+    // currentLanguage.value = newLang;
+    // router.push({
+    //     path: `/${newLang}${route.fullPath.substring(3)}` // Update the lang in the current path
+    // }).then(() => {
+    //     window.location.reload();
+    // });
 };
 
 

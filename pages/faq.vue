@@ -39,11 +39,10 @@ const route = useRoute();
 
 onMounted(async () => {
    // Get the current language (from the route params or i18n locale)
-   const lang = route.params.lang || locale.value || 'en';
+   
    
    try {
-      // Dynamically import the JSON file based on language
-      const categoriesModule = await import(`@/lang/${lang}/faq.json`);
+      const categoriesModule = await import(`../locales/${locale.value}/faq.json`);
       faqs.value = categoriesModule.default; // Access the imported JSON data
    } catch (error) {
       console.error('Error loading categories:', error);

@@ -1,8 +1,8 @@
 <template>
     <div class="flex justify-center flex-col items-center pb-6 mx-2 relative mt-1">
-        <router-link :to="{name:'studies.index'}" class="absolute top-16 left-10 invisible md:invisible lg:visible">
-            <ArrowLeftCircleIcon class="size-10"/>
-        </router-link>
+        <NuxtLink :to="$localePath('studies')" class="absolute top-16 start-10 invisible md:invisible lg:visible" :class=" [ locale == 'ar' ?'rotate-180' : 'rotate-0']">
+            <ArrowLeftCircleIcon class="size-10" />
+        </NuxtLink>
         <h1 class="mt-5 text-2xl font-semibold text-center">{{$t('comparison_title')}}</h1>
 
         <div class="overflow-x-auto rounded shadow-lg">

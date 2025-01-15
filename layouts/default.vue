@@ -6,7 +6,7 @@
             <Navbar @toggle-sidebar="toggleSidebar" class="fixed z-10 w-full " />
 
             <main class="pt-12 bg-main h-auto" @click="handleClickOutside()">
-                <nuxt-child />
+                <NuxtPage />
             </main>
             <Footer v-if="$route.name !== 'contact'" />
         </div>
@@ -14,12 +14,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref } from 'vue';
 import Navbar from '@/components/ui/navbar/navbar.vue';
 import Sidebar from '@/components/ui/sidebar/sidebar.vue';
 import Footer from '@/components/footer.vue';
-import { useRoute } from 'vue-router';
-
 const sidebarOpen = ref(false);
 const sidebar = ref(null); // Create a reference for the sidebar
 

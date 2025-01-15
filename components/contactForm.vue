@@ -38,7 +38,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
 // Define refs for form inputs
 const email = ref('');
@@ -58,18 +58,18 @@ const sendEmail = async () => {
         user_email: email.value, // User's email (from form input)
     };
 
-    try {
-        // Send email via EmailJS
-        const response = await emailjs.send(serviceID, templateID, templateParams, publicKey);
-        console.log('Email sent successfully:', response);
-        alert('Message sent successfully!');
-        // Clear form fields after submission
-        email.value = '';
-        name.value = '';
-        message.value = '';
-    } catch (error) {
-        console.error('Failed to send message:', error);
-        alert('Failed to send message. Please try again later.');
-    }
+    // try {
+    //     // Send email via EmailJS
+    //     // const response = await emailjs.send(serviceID, templateID, templateParams, publicKey);
+    //     // console.log('Email sent successfully:', response);
+    //     alert('Message sent successfully!');
+    //     // Clear form fields after submission
+    //     email.value = '';
+    //     name.value = '';
+    //     message.value = '';
+    // } catch (error) {
+    //     console.error('Failed to send message:', error);
+    //     alert('Failed to send message. Please try again later.');
+    // }
 };
 </script>

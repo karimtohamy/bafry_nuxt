@@ -1,6 +1,6 @@
 <template>
     <div class="mt-3">
-        <router-link :to="{
+        <!-- <router-link :to="{
             name: to, params: {
             lang: currnetlang
             }
@@ -8,7 +8,7 @@
             active-class="bg-black/30 !text-white">
 
             <span>{{ $t(to)}}</span>
-        </router-link>
+        </router-link> -->
     </div>
 </template>
 

@@ -40,7 +40,7 @@
                 <li>
                     <div class="flex" style="direction: ltr;">
                         <PhoneIcon class="size-5 me-4" />
-                        <a :href="currentLanguage == 'ar' ? 'tel:+966536611411' : 'tel:+966536611411'"
+                        <a href="tel:+966536611411"
                             class="text-white" style="direction: ltr;">
                             +966 53 661 1411
                         </a>
@@ -79,15 +79,6 @@ import Map from './map.vue';
 import { EnvelopeIcon, MapPinIcon, PhoneIcon, } from '@heroicons/vue/24/outline';
 import { useI18n } from 'vue-i18n';
 const { locale } = useI18n();
-const currentLanguage = ref(locale.value);
-const navItems = [
-    { to: "home", text: "Home" },
-    { to: "products", text: "Products" },
-    { to: "studies", text: "Studies" },
-    { to: "faq", text: "FAQ" },
-    { to: "contact", text: "Contact Us" },
-    { to: "tools", text: "Tools" },
-];
 
 </script>
 

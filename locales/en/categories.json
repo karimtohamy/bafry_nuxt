@@ -13,9 +13,9 @@
         "image": "dqa"
       },
       {
-        "name":"D-1",
-        "desc":"The Latest Exclusive Multipurpose Disinfectant, hydrogen peroxide (50 %) & silver ions. D-H-S IONS. long acting broad spectrum against spores, fungi’s, bacteria, viruses, algae and bio film. D-H-S IONS. food grade, nontoxic, non-carcinogenic and non-mutagenic.",
-        "image":"d1"
+        "name": "D-1",
+        "desc": "The Latest Exclusive Multipurpose Disinfectant, hydrogen peroxide (50 %) & silver ions. D-H-S IONS. long acting broad spectrum against spores, fungi’s, bacteria, viruses, algae and bio film. D-H-S IONS. food grade, nontoxic, non-carcinogenic and non-mutagenic.",
+        "image": "d1"
       },
       {
         "name": "Anti Keime",
@@ -23,14 +23,14 @@
         "image": "AntiK"
       },
       {
-        "name":"D-Cloud",
-        "desc":"New innovation nanotechnology disinfectant, Quaternary ammonium compound & Branched alcohol. Strong against spores, fungi, bacteria, viruses, algae. Food grade, nontoxic",
-        "image":"dcloud"
+        "name": "D-Cloud",
+        "desc": "New innovation nanotechnology disinfectant, Quaternary ammonium compound & Branched alcohol. Strong against spores, fungi, bacteria, viruses, algae. Food grade, nontoxic",
+        "image": "dcloud"
       },
       {
-        "name":"D-PLUS",
-        "desc":"A several substances oligodynamic disinfectants. A synergetic effect of hydrogen peroxide, silver ions & acetic acid. Long acting broad spectrum against spores, fungi, bacteria, viruses, algae, bio film .Food grade, nontoxic, non-carcinogenic, nonmutagenic. ",
-        "image":"dplus"
+        "name": "D-PLUS",
+        "desc": "A several substances oligodynamic disinfectants. A synergetic effect of hydrogen peroxide, silver ions & acetic acid. Long acting broad spectrum against spores, fungi, bacteria, viruses, algae, bio film .Food grade, nontoxic, non-carcinogenic, nonmutagenic. ",
+        "image": "dplus"
       }
     ]
   },

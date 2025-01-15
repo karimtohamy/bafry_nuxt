@@ -1,36 +1,41 @@
 <template>
-    <div class="flex justify-center items-center w-full h-full py-7 lg:pt-8 px-4">
-        <div
-            class="rounded-lg shadow-lg flex flex-col lg:flex-row lg:mx-10 w-full p-6 sm:p-10 md:p-12 lg:p-11 justify-between items-center bg-primary overflow-hidden">
-            <div class="min-h-full flex items-center order-2 lg:order-1 flex-col w-auto lg:w-96 md:w-full">
-                <!-- Buttons to switch between map locations -->
-                <div class="mb-6 grid grid-cols-2 gap-4 w-full">
-                    <button
-                        :class="['text-white p-3 rounded', activeButton === 'fact' ? 'bg-emerald-400' : 'bg-emerald-500/20']"
-                        @click="switchmap('fact')">
-                        {{ $t('fact') }}
-                    </button>
-                    <button
-                        :class="['text-white p-3 rounded', activeButton === 'office' ? 'bg-emerald-400' : 'bg-emerald-500/20']"
-                        @click="switchmap('office')">
-                        {{ $t('head_office') }}
-                    </button>
-                </div>
+    <ClientOnly>
 
-                <!-- Map Component -->
-                <Map :lat="lat" :long="long" :add="add"
-                    class="w-64 h-64 lg:h-full lg:w-96 md:w-full md:aspect-video rounded-lg overflow-hidden aspect-auto flex items-center" />
-                <div class="mt-5">
-                    <a :href="link" class="text-white underline">{{ $t(add_key) }}</a>
+        <div class="flex justify-center items-center w-full h-full py-7 lg:pt-8 px-4">
+            <div
+                class="rounded-lg shadow-lg flex flex-col lg:flex-row lg:mx-10 w-full p-6 sm:p-10 md:p-12 lg:p-11 justify-between items-center bg-primary overflow-hidden">
+                <div class="min-h-full flex items-center order-2 lg:order-1 flex-col w-auto lg:w-96 md:w-full">
+                    <!-- Buttons to switch between map locations -->
+                    <div class="mb-6 grid grid-cols-2 gap-4 w-full">
+                        <button
+                            :class="['text-white p-3 rounded', activeButton === 'fact' ? 'bg-emerald-400' : 'bg-emerald-500/20']"
+                            @click="switchmap('fact')">
+                            {{ $t('fact') }}
+                        </button>
+                        <button
+                            :class="['text-white p-3 rounded', activeButton === 'office' ? 'bg-emerald-400' : 'bg-emerald-500/20']"
+                            @click="switchmap('office')">
+                            {{ $t('head_office') }}
+                        </button>
+                    </div>
+
+                    <!-- Map Component -->
+
+                    <Map :lat="lat" :long="long" :add="add"
+                        class="w-64 h-64 lg:h-full lg:w-96 md:w-full md:aspect-video rounded-lg overflow-hidden aspect-auto flex items-center" />
+                    <div class="mt-5">
+                        <a :href="link" class="text-white underline">{{ $t(add_key) }}</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Contact Form -->
-            <div class="w-full lg:w-1/2 order-1 lg:order-2 mb-6">
-                <div class="mb-7 text-white text-xl">{{ $t('contact_email') }}</div>
-                <ContactForm />
+                <!-- Contact Form -->
+                <div class="w-full lg:w-1/2 order-1 lg:order-2 mb-6">
+                    <div class="mb-7 text-white text-xl">{{ $t('contact_email') }}</div>
+                    <ContactForm />
+                </div>
             </div>
         </div>
-    </div>
+    </ClientOnly>
+
 </template>
 
 <script setup>

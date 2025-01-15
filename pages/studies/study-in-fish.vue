@@ -1,8 +1,8 @@
 <template>
-	<div class="px-40  mx-auto pt-12 p-4 relative">
-        <router-link :to="{name:'studies.index'}" class="absolute top-16 left-10 invisible md:invisible lg:visible">
-            <ArrowLeftCircleIcon class="size-10"/>
-        </router-link>
+	<div class="lg:px-40  mx-auto pt-12 p-4 relative">
+        <NuxtLink :to="$localePath('studies')" class="absolute top-16 start-10 invisible md:invisible lg:visible" :class=" [ locale == 'ar' ?'rotate-180' : 'rotate-0']">
+            <ArrowLeftCircleIcon class="size-10" />
+        </NuxtLink>
 		<!-- Abstract Section -->
 		<div id="section02" class="mt-8">
 			<h3 class="text-xl font-semibold">{{ $t('abstract') }}</h3>

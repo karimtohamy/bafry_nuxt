@@ -1,10 +1,16 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
+  target: 'static',
+  plugins: [
+    '~/plugins/i18n.js',  // Add this line to load the plugin
+  ],  compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n","@headlessui/vue"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxtjs/leaflet",  'nuxt-headlessui'],
   i18n: {
-    vueI18n: './i18n.config.js', // Reference to your custom i18n config
-  
-  }
+    locales: ["en", "ar"],
+    vueI18n: "./i18n.config.js",
+    strategy: "prefix",
+  },
+  tailwindcss: {
+    cssPath: "~/assets/css/tailwind.css",
+  },
 });
