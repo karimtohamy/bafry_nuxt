@@ -14,7 +14,7 @@
 <script setup>
 import SidebarLinks from './sidebarLinks.vue';
 const navItems = [
-  { to: "", text: "home" },
+  { to: "/", text: "home" },
   { to: "products", text: "products" },
   { to: "tools", text: "tools" },
   { to: "studies", text: "studies" },
