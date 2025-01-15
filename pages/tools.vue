@@ -105,6 +105,13 @@ watch(locale, (newLocale) => {
 });
 
 const tools = computed(() => currentLanguage.value === 'ar' ? tools_ar : tools_en);
+
+useHead({
+  title: 'Bafry | Tools ',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 </script>
 
 <style scoped>

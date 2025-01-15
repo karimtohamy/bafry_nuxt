@@ -110,4 +110,10 @@
 
 <script setup>
     import { ArrowLeftCircleIcon } from '@heroicons/vue/24/outline';
+	useHead({
+  title: 'Bafry | Study-in-fish ',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 </script>

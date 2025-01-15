@@ -4,8 +4,13 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-
+<script  setup>
+useHead({
+  title: 'Bafry | Studies ',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 </script>
 
 <style>

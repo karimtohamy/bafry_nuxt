@@ -119,7 +119,12 @@ onMounted(async () => {
         console.error('Error loading categories:', error);
     }
 });
-
+useHead({
+  title: 'Bafry | Products ',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 </script>
 
 <style scoped>

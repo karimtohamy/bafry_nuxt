@@ -9,6 +9,12 @@
 import Mission from '@/components/mission.vue';
 import ImageSlider from '@/components/ui/imageSlider.vue';
 
+useHead({
+  title: 'Bafry | Home ',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 </script>
 
 <style  scoped>

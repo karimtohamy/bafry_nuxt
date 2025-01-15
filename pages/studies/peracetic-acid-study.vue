@@ -83,7 +83,12 @@
 
 <script setup>
 import { ArrowLeftCircleIcon } from '@heroicons/vue/24/outline';
-
+useHead({
+  title: 'Bafry | Peracetic-acid-study ',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 </script>
 
 <style lang="scss" scoped></style>

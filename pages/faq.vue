@@ -53,6 +53,12 @@ onMounted(async () => {
 const toggleFAQ = (index) => {
    activeIndex.value = activeIndex.value === index ? null : index;
 };
+useHead({
+  title: 'Bafry | FAQs ',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 </script>
 
 <style scoped>

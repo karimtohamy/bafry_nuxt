@@ -16,7 +16,12 @@
 </template>
 
 <script setup>
-
+useHead({
+  title: 'Bafry | 404 ',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 </script>
 
 <style lang="scss" scoped></style>
