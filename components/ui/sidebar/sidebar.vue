@@ -5,7 +5,7 @@
             <div>
 
                 <SidebarLinks v-for="item in navItems" @click="emit('toggle-sidebar')" 
-                    :to="item.to" />
+                    :to="item.to" :text="item.text" />
             </div>
         </div>
     </div>
@@ -13,48 +13,13 @@
 
 <script setup>
 import SidebarLinks from './sidebarLinks.vue';
-import { ref, onMounted, onUnmounted } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { useRouter, useRoute } from 'vue-router';
-
-const router = useRouter();
-const route = useRoute();
-const { locale } = useI18n();
-const currentLanguage = ref(locale.value);
-
-
-const setLanguagePreference = (lang) => {
-    localStorage.setItem('preferredLanguage', lang); // Save preferred language
-    locale.value = lang;
-    document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr'); // Adjust text direction
-};
-
-const toggleLanguage = () => {
-    // const newLang = currentLanguage.value === 'en' ? 'ar' : 'en';
-    // setLanguagePreference(newLang);
-    // currentLanguage.value = newLang;
-    // router.push({
-    //     path: `/${newLang}${route.fullPath.substring(3)}` // Update the lang in the current path
-    // }).then(() => {
-    //     window.location.reload();
-    // });
-};
-
-
-
-
-onMounted(() => {
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en'; // Get from storage or default
-    setLanguagePreference(savedLanguage);
-    currentLanguage.value = savedLanguage;
-});
 const navItems = [
-    { to: "home"},
-    { to: "products"},
-    { to: "studies"},
-    { to: "contact"},
-    { to: "tools"},
-    { to: "faq"},
+  { to: "", text: "home" },
+  { to: "products", text: "products" },
+  { to: "tools", text: "tools" },
+  { to: "studies", text: "studies" },
+  { to: "contact", text: "contact" },
+  { to: "faq", text: "faq" },
 ];
 
 const emit = defineEmits(['toggle-sidebar']);

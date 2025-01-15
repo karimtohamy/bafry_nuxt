@@ -46,6 +46,7 @@ const availableLocales = computed(() => {
 
 // Manage current language in the component
 const currentLanguage = ref(locale.value);
+const emit = defineEmits(['toggle-sidebar'])
 
 // Sync the language when the component is mounted
 onMounted(() => {
@@ -70,11 +71,11 @@ const setLanguage = (locale) => {
 // Navigation items
 const navItems = [
   { to: "/", text: "home" },
-  { to: "/products", text: "products" },
-  { to: "/tools", text: "tools" },
-  { to: "/studies", text: "studies" },
-  { to: "/contact", text: "contact" },
-  { to: "/faq", text: "faq" },
+  { to: "products", text: "products" },
+  { to: "tools", text: "tools" },
+  { to: "studies", text: "studies" },
+  { to: "contact", text: "contact" },
+  { to: "faq", text: "faq" },
 ];
 </script>
 

@@ -3,12 +3,12 @@
   </template>
   
   <script setup>
-  import { onMounted, ref, defineProps } from 'vue';
+  import { onMounted, ref, watch, defineProps } from 'vue';
   
   const props = defineProps({
-      lat: Number,
-      long: Number,
-      add: String
+    lat: Number,
+    long: Number,
+    add: String,
   });
   
   let mapInstance = null;
@@ -17,28 +17,42 @@
   const zoom = ref(window.outerWidth <= 768 ? 10 : 13);
   
   onMounted(() => {
-      if (process.client) {
-          // Dynamically import Leaflet to ensure it only runs on the client side
-          import('leaflet').then(L => {
-              // Initialize map and add OpenStreetMap tiles
-              mapInstance = L.map('map').setView([props.lat, props.long], zoom.value);
-              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                  maxZoom: 19,
-              }).addTo(mapInstance);
+    if (process.client) {
+      import('leaflet').then((L) => {
+        // Initialize the map
+        mapInstance = L.map('map').setView([props.lat, props.long], zoom.value);
   
-              // Add the marker and popup
-              marker = L.marker([props.lat, props.long]).addTo(mapInstance)
-                  .bindPopup(props.add)
-                  .openPopup();
-          });
-      }
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+        }).addTo(mapInstance);
+  
+        // Add the marker
+        marker = L.marker([props.lat, props.long]).addTo(mapInstance)
+          .bindPopup(props.add)
+          .openPopup();
+      });
+    }
   });
+  
+  // Watch for prop changes and update the map and marker
+  watch(
+    () => [props.lat, props.long, props.add],
+    ([newLat, newLong, newAdd]) => {
+      if (mapInstance && marker) {
+        mapInstance.setView([newLat, newLong], zoom.value); // Update the map view
+        marker.setLatLng([newLat, newLong]); // Update the marker position
+        marker.setPopupContent(newAdd); // Update the popup content
+      }
+    }
+  );
   </script>
   
   <style scoped>
   #map {
-      aspect-ratio: 1/1;
-      z-index: 1;
+
+    aspect-ratio: 1 / 1;
+    z-index: 1;
   }
   </style>
   

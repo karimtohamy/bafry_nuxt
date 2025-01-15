@@ -10,7 +10,7 @@
       <p class="text-lg mb-7 md:text-xl text-center w-full md:w-1/2 mx-auto px-4">
         {{ $t('home_p') }}
       </p>
-      <NuxtLink  to="/products" class="mt-6 px-6 py-2 bg-emerald-500/35 text-white rounded-md shadow-lg">
+      <NuxtLink  :to="$localePath('products')" class="mt-6 px-6 py-2 bg-emerald-500/35 text-white rounded-md shadow-lg">
         {{ $t('our') }}
       </NuxtLink>
     </div>

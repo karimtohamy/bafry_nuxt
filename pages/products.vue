@@ -10,7 +10,7 @@
                 </h2>
                 <!-- Chevron Icon with Rotation -->
                 <ChevronDownIcon class="size-6 mb-1 ms-3 transition-transform duration-300 ease-in-out hover:text-emerald-400"
-                :class="{'rotate-180': activeCategories.includes(item.category),'hidden':index == 0}" @click="toggleCategory(item.category, index)" />
+                :class="{'rotate-180': activeCategories.includes(item.category),'hidden':index == 0}"  />
             </div>
 
             <!-- Smooth Drawer Transition for Cards -->

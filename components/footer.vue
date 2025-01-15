@@ -1,6 +1,6 @@
 <template>
     <div class=" flex justify-between flex-wrap items-center bg-primary text-white  py-10   px-5 relative ">
-        <div class="flex items-start flex-col order-1 mt-5">
+        <div class="flex items-start flex-col order-1 mt-5 z-10">
 
             <a class="flex items-center "
                 href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A5%D8%AA%D9%82%D8%A7%D9%86+%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D8%A6%D9%84+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%E2%80%AD/@24.683642,46.6909083,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2ee354bf0c8bd3:0xbb53668849a37616!8m2!3d24.683642!4d46.6909083!16s%2Fg%2F11fk17hj9l?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -25,7 +25,7 @@
             <img src="@/assets/images/Logo.png" alt="" class="w-32 h-32">
         </div>
 
-        <div class="order-2 mt-3">
+        <div class="order-2 mt-3 z-10">
             <ul>
                 <li class="">{{ $t('contacts') }}</li>
                 <li class="my-2">

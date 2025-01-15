@@ -1,14 +1,11 @@
 <template>
     <div class="mt-3">
-        <!-- <router-link :to="{
-            name: to, params: {
-            lang: currnetlang
-            }
-        }" class="flex justify-start ps-3 items-center mb-2 py-2 rounded transition-colors text-white"
+        <NuxtLink :to="$localePath(to)"
+         class="flex justify-start ps-3 items-center mb-2 py-2 rounded transition-colors text-white"
             active-class="bg-black/30 !text-white">
 
-            <span>{{ $t(to)}}</span>
-        </router-link> -->
+            <span>{{ $t(text)}}</span>
+        </NuxtLink>
     </div>
 </template>
 

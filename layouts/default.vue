@@ -1,12 +1,12 @@
 <template>
-    <div class="h-full flex min-w-full">
+    <div class="min-h-screen flex min-w-full">
         <!-- Sidebar -->
         <Sidebar :class="{ '-ms-[240px] transition-all': !sidebarOpen }" @toggle-sidebar="toggleSidebar" />
-        <div class="flex-1">
+        <div class="flex-1 min-h-[100vh]">
             <Navbar @toggle-sidebar="toggleSidebar" class="fixed z-10 w-full " />
 
-            <main class="pt-12 bg-main h-auto" @click="handleClickOutside()">
-                <NuxtPage />
+            <main class="pt-12 bg-main " @click="handleClickOutside()">
+                <NuxtPage class="min-h-[75vh]"/>
             </main>
             <Footer v-if="$route.name !== 'contact'" />
         </div>
