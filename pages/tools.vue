@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 w-full gap-8">
             <div v-for="tool in tools" :key="tool.id"
                 class="shadow-lg rounded flex flex-col items-center justify-center p-5 bg-sec text-white hover:scale-110 transition-all">
-                <img :src="tool.imgSrc" alt="">
+                <img :src="tool.imgSrc" alt="" :class="[tool.imgSrc == '/quat.png' ? 'my-2' : '']">
                 <p>{{ tool.name }}</p>
                 <div class="text-center mt-1">
 
@@ -107,10 +107,10 @@ watch(locale, (newLocale) => {
 const tools = computed(() => currentLanguage.value === 'ar' ? tools_ar : tools_en);
 
 useHead({
-  title: 'Bafry | Tools ',
-  meta: [
-    { name: 'description', content: 'My amazing site.' }
-  ],
+    title: 'Bafry | Tools ',
+    meta: [
+        { name: 'description', content: 'My amazing site.' }
+    ],
 })
 </script>
 

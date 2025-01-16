@@ -27,8 +27,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import Logo from '@/assets/images/Logo.png'; // Import Logo image for direct use
-import image1 from '@/assets/images/iStock-939983060.jpg'; // Import images directly
-import image2 from '@/assets/images/iStock-1293325404.jpg';
+import image1 from '@/assets/images/background-2.jpg'; // Import images directly
+import image2 from '@/assets/images/background-1.jpg';
 
 const slides = ref([
   {
