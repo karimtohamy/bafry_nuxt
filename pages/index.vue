@@ -12,7 +12,7 @@ import ImageSlider from '@/components/ui/imageSlider.vue';
 useHead({
   title: 'Bafry | Home ',
   meta: [
-    { name: 'description', content: 'My amazing site.' }
+    { name: 'description', content: "welcome to bafry's home page" }
   ],
 })
 </script>

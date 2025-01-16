@@ -109,7 +109,7 @@ const tools = computed(() => currentLanguage.value === 'ar' ? tools_ar : tools_e
 useHead({
     title: 'Bafry | Tools ',
     meta: [
-        { name: 'description', content: 'My amazing site.' }
+        { name: 'description', content: 'A list of tools provided by Bafry' }
     ],
 })
 </script>

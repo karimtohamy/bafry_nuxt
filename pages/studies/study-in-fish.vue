@@ -110,10 +110,11 @@
 
 <script setup>
     import { ArrowLeftCircleIcon } from '@heroicons/vue/24/outline';
+	const { locale } = useI18n();
 	useHead({
-  title: 'Bafry | Study-in-fish ',
+  title: 'Bafry | Study in fish ',
   meta: [
-    { name: 'description', content: 'My amazing site.' }
+    { name: 'description', content: 'rial of using Bafry D50/500 for control in saprolegniosis in a dose of 0.75 ml/L (375ppm) for 10-12 minutes for 3 successive days as a bath gave good results in treatment of the diseased fish in aquaria, this were indicated the rate of mortality reach 16.7% without any effect on the healthy stat of treated fish and also no effect on hematology and blood chemistry of treated fish with Bafry D50/500. Histopathological finding of treated fish with Bafry D50/500: skin showed increase of M.M.C. and slight sloughing of most superficial layer of epidermis but the gills showed hyperplasia of epithelial cells covering of primary lamellae, this indicate that the infected fish was treated with BafryD50/500.' }
   ],
 })
 </script>

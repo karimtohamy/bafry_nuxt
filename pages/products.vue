@@ -122,7 +122,7 @@ onMounted(async () => {
 useHead({
   title: 'Bafry | Products ',
   meta: [
-    { name: 'description', content: 'My amazing site.' }
+    { name: 'description', content: "the wide range of Bafry's producs and categories" }
   ],
 })
 </script>

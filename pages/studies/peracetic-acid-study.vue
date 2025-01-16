@@ -83,10 +83,11 @@
 
 <script setup>
 import { ArrowLeftCircleIcon } from '@heroicons/vue/24/outline';
+const { locale } = useI18n();
 useHead({
-  title: 'Bafry | Peracetic-acid-study ',
+  title: 'Bafry | Peracetic acid study ',
   meta: [
-    { name: 'description', content: 'My amazing site.' }
+  { name: 'description', content: 'The comparison between D-H/S IONS and peracetic acid' }
   ],
 })
 </script>

@@ -10,29 +10,29 @@ useHead({
     {
       rel: 'shortcut icon',
       type: 'image/x-icon',
-      href: 'https://bafry.de/img/icon-bafry.png',
+      href: '/icon-bafry.png',
     },
     {
       rel: 'icon',
-      href: '/favicon-192x192.png',
+      href: '/icon-bafry.png',
       sizes: '192x192',
       type: 'image/png',
     },
     {
       rel: 'icon',
-      href: '/android-chrome-192x192.png',
+      href: '/icon-bafry.png',
       sizes: '192x192',
       type: 'image/png',
     },
     {
       rel: 'icon',
-      href: '/android-chrome-512x512.png',
+      href: '/icon-bafry.png',
       sizes: '512x512',
       type: 'image/png',
     },
     {
       rel: 'apple-touch-icon',
-      href: '/favicon-192x192.png',
+      href: '/icon-bafry.png',
       sizes: '192x192',
     },
     {
@@ -53,6 +53,10 @@ useHead({
       name: 'author',
       content: 'Bafry saudi',
     },
+    { property: 'og:title', content: 'Bafry | Hygiene Solutions' },
+    { property: 'og:description', content: 'Providing top-tier hygiene and disinfectant products.' },
+    { property: 'og:image', content: '/icon-bafry.png' },
+    { property: 'og:url', content: 'https://bafrynuxt.netlify.app' },
   ]
 })
 

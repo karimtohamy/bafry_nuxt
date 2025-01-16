@@ -56,7 +56,7 @@ const toggleFAQ = (index) => {
 useHead({
   title: 'Bafry | FAQs ',
   meta: [
-    { name: 'description', content: 'My amazing site.' }
+    { name: 'description', content: "Bafry's frequently asked questions " }
   ],
 })
 </script>

@@ -8,7 +8,7 @@
 useHead({
   title: 'Bafry | Studies ',
   meta: [
-    { name: 'description', content: 'My amazing site.' }
+    { name: 'description', content: 'studies made by Bafry' }
   ],
 })
 </script>

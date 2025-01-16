@@ -72,7 +72,7 @@ function switchmap(type) {
 useHead({
   title: 'Bafry | Contact Us ',
   meta: [
-    { name: 'description', content: 'My amazing site.' }
+    { name: 'description', content: 'Contact us about any inquiries you might have ' }
   ],
 })
 </script>
