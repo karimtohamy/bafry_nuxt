@@ -9,8 +9,9 @@
                     {{ item.category }}
                 </h2>
                 <!-- Chevron Icon with Rotation -->
-                <ChevronDownIcon class="size-6 mb-1 ms-3 transition-transform duration-300 ease-in-out hover:text-emerald-400"
-                :class="{'rotate-180': activeCategories.includes(item.category),'hidden':index == 0}"  />
+                <ChevronDownIcon
+                    class="size-6 mb-1 ms-3 transition-transform duration-300 ease-in-out hover:text-emerald-400"
+                    :class="{ 'rotate-180': activeCategories.includes(item.category), 'hidden': index == 0 }" />
             </div>
 
             <!-- Smooth Drawer Transition for Cards -->
@@ -31,10 +32,13 @@
                             <span v-show="activeDesc === `${item.category}-${index}`"
                                 class="text-sm text-white mt-2 lg:hidden transition-all duration-500 ease-in-out">
                                 {{ product.desc }}
-                                <p class="text-xs cursor-pointer text-emerald-500 hover:underline"
-                                    @click="openModal(product)">
-                                    {{ $t('more_info') }}
-                                </p>
+                                <a :href="product.image" target="_blank">
+
+                                    <p class="text-xs cursor-pointer text-emerald-500 hover:underline"
+                                        @click="openModal(product)">
+                                        {{ $t('more_info') }}
+                                    </p>
+                                </a>
                             </span>
                         </transition>
 
@@ -44,12 +48,11 @@
                         </p>
 
                         <!-- "More Info" Link for Large Screens -->
-                        <div class="w-full lg:flex hidden justify-center ">
-                            <p class="text-emerald-500 text-right text-xs cursor-pointer hover:underline"
-                                @click="openModal(product)">
+                        <a :href="product.image" target="_blank" class="w-full lg:flex hidden justify-center ">
+                            <p class="text-emerald-500 text-right text-xs cursor-pointer hover:underline">
                                 {{ $t('more_info') }}
                             </p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </transition>
@@ -120,10 +123,10 @@ onMounted(async () => {
     }
 });
 useHead({
-  title: 'Bafry | Products ',
-  meta: [
-    { name: 'description', content: "the wide range of Bafry's producs and categories" }
-  ],
+    title: 'Bafry | Products ',
+    meta: [
+        { name: 'description', content: "the wide range of Bafry's producs and categories" }
+    ],
 })
 </script>
 
