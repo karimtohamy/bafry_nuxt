@@ -8,7 +8,7 @@
                     placeholder=" " required />
                 <label for="floating_email"
                     class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">{{
-                    $t('email_add') }}</label>
+                        $t('email_add') }}</label>
             </div>
 
             <!-- Name Input -->
@@ -18,7 +18,7 @@
                     placeholder="" required />
                 <label for="name"
                     class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">{{
-                    $t('name_email') }}</label>
+                        $t('name_email') }}</label>
             </div>
 
             <!-- Message Textarea -->
@@ -29,8 +29,9 @@
 
             <!-- Submit Button -->
             <button type="submit"
-                class="text-white mt-7 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+                class="text-white mt-7 relative bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-16 py-2.5 flex  text-center">
                 {{ $t('send') }}
+                <Spinner v-if="spinner" class="size-6 absolute start-6 top-2" />
             </button>
         </form>
     </div>
@@ -38,13 +39,13 @@
 
 <script setup>
 import { ref } from 'vue';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 // Define refs for form inputs
 const email = ref('');
 const name = ref('');
 const message = ref('');
-
+const spinner = ref(false)
 // EmailJS configuration
 const serviceID = 'service_qnsudgt'; // Your Gmail service ID from EmailJS
 const templateID = 'template_de7kzhw'; // Your template ID from EmailJS
@@ -58,18 +59,17 @@ const sendEmail = async () => {
         user_email: email.value, // User's email (from form input)
     };
 
-    // try {
-    //     // Send email via EmailJS
-    //     // const response = await emailjs.send(serviceID, templateID, templateParams, publicKey);
-    //     // console.log('Email sent successfully:', response);
-    //     alert('Message sent successfully!');
-    //     // Clear form fields after submission
-    //     email.value = '';
-    //     name.value = '';
-    //     message.value = '';
-    // } catch (error) {
-    //     console.error('Failed to send message:', error);
-    //     alert('Failed to send message. Please try again later.');
-    // }
+    try {
+        spinner.value = true
+        // Send email via EmailJS
+        const response = await emailjs.send(serviceID, templateID, templateParams, publicKey);
+        alert('Message sent successfully!');
+        spinner.value = false
+        email.value = '';
+        name.value = '';
+        message.value = '';
+    } catch (error) {
+        alert('Failed to send message. Please try again later.');
+    }
 };
 </script>

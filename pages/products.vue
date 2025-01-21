@@ -119,7 +119,6 @@ onMounted(async () => {
             activeCategories.value = [categoriesModule.default[0].category];
         }
     } catch (error) {
-        console.error('Error loading categories:', error);
     }
 });
 useHead({

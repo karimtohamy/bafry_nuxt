@@ -45,7 +45,6 @@ onMounted(async () => {
       const categoriesModule = await import(`../locales/${locale.value}/faq.json`);
       faqs.value = categoriesModule.default; // Access the imported JSON data
    } catch (error) {
-      console.error('Error loading categories:', error);
    }
 });
 

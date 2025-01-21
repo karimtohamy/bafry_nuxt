@@ -81,7 +81,6 @@ watchEffect(() => {
                 imageUrl.value = mod.default; // URL of the dynamically imported image
             })
             .catch((error) => {
-                console.error(`Error loading image for ${props.image}:`, error);
             });
     } else {
         imageUrl.value = null; // Reset if imageName does not match
